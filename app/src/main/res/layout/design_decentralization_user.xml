@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/bg_gach_duoi">
+    <RelativeLayout
+        android:id="@+id/RLT_header"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TextView_quyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phân quyền sản phẩm  "
+            android:textSize="17sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorDark"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/RLT_header">
+        <TextView
+            android:id="@+id/TextView_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:textColor="@color/appRed"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/TextView_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_edit"
+            android:layout_marginTop="10sp"
+            android:text="Xóa"
+            android:textColor="@color/appRed"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

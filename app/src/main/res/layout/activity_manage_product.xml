@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageProductActivity">
+    <RelativeLayout
+        android:id="@+id/RLT_qlsp"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/P_Blue">
+        <TextView
+            android:id="@+id/TextView_qlsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý sản phẩm "
+            android:layout_marginStart="115sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="6sp"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Thêm"
+            android:layout_toRightOf="@+id/TextView_qlsp"
+            android:layout_marginStart="40sp"
+            android:backgroundTint="@color/cardview_dark_background"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RLT_qlsp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@+id/RLT_layout"
+                tools:listitem="@layout/design_manage_list_product"/>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

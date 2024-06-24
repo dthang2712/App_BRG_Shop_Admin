@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/bg_gach_duoi">
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_decentralization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"/>
+        <TextView
+            android:id="@+id/TextView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkbox_decentralization"
+            android:text="Mã Ship: 1102 "
+            android:textSize="16sp"
+            android:layout_marginStart="10sp"/>
+        <TextView
+            android:id="@+id/TextView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_id"
+            android:layout_toRightOf="@+id/checkbox_decentralization"
+            android:text="Tên Ship: Hoàng Đức Thắng"
+            android:textSize="16sp"
+            android:layout_marginStart="10sp"/>
+        <TextView
+            android:id="@+id/Textview_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_name"
+            android:layout_toRightOf="@+id/checkbox_decentralization"
+            android:text="SDT: 0559258998"
+            android:textSize="16sp"
+            android:layout_marginStart="10sp"/>
+        <TextView
+            android:id="@+id/TextView_trangthai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Textview_sdt"
+            android:layout_toRightOf="@+id/checkbox_decentralization"
+            android:text="Trạng thái:"
+            android:textSize="16sp"
+            android:layout_marginStart="10sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Textview_sdt"
+            android:layout_toRightOf="@+id/TextView_trangthai"
+            android:text="Rảnh"
+            android:textColor="@color/appRed"
+            android:textSize="16sp"
+            android:layout_marginStart="6sp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

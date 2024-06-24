@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/P_Blue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="36dp"
+        android:gravity="center"
+        android:paddingBottom="150dp">
+        <EditText
+            android:id="@+id/edt_sdt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            style="@style/Widget.AppCompat.TextView"
+            android:paddingLeft="120dp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:background="@drawable/bg_light_radius"
+            android:hint="Nhập số điện thoại" />
+        <EditText
+            android:id="@+id/edt_mk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.TextView"
+            android:paddingLeft="120dp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:background="@drawable/bg_light_radius"
+            android:hint="Nhập mật khẩu"
+            />
+        <TextView
+            android:id="@+id/TextView_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_red_radius"
+            android:text="ĐĂNG NHẬP"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/colorLight"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

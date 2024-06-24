@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLight"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banh1" />
+
+    <TextView
+        android:id="@+id/TextView_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_product"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingHorizontal="10sp"
+        android:text="Bánh quy hộp kẹp kem vị vani Bourbon Roanne Vallina 85g"
+        android:textColor="@color/colorDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TextView_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_product"
+        android:ellipsize="end"
+        android:paddingHorizontal="10sp"
+        android:text="31.000đ"
+        android:textColor="@color/appRed" />
+
+    <TextView
+        android:id="@+id/TextView_PriceDisscound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_price"
+        android:paddingHorizontal="10sp"
+        android:text="45.000đ"
+        android:textColor="@color/grayAeb"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView_PriceDisscound"
+        android:layout_alignEnd="@+id/TextView_PriceDisscound"
+        android:layout_alignBottom="@+id/TextView_PriceDisscound"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="1sp"
+        android:layout_marginEnd="12sp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_PriceDisscound"
+        android:layout_marginStart="230sp">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/P_Blue"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_edit"
+            android:backgroundTint="@color/P_Blue"
+            android:text="Xóa" />
+    </RelativeLayout>
+</RelativeLayout>

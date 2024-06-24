@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageCategoryActivity">
+    <RelativeLayout
+        android:id="@+id/RLT_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlue">
+
+        <TextView
+            android:id="@+id/TextView_qluser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6sp"
+            android:text="Quản lý danh mục"
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/img_back_info"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:padding="10sp"
+            android:src="@drawable/icon_back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RLT_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLT_header">
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="16dp"
+            android:searchIcon="@drawable/icon_search_white"
+            android:queryHint="Nhập danh mục cần tìm kiếm ?"
+            android:background="@drawable/bg_gray_border_radius"
+            android:iconifiedByDefault="false"
+            android:layout_marginTop="3sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RLT_phanquyen"
+        android:layout_width="match_parent"
+        android:layout_height="600sp"
+        android:layout_below="@+id/RLT_search"
+        android:layout_marginTop="2sp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/design_list_category"/>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RLT_phanquyen"
+        android:background="@color/whiteTwo">
+        <TextView
+            android:id="@+id/TextView_addquyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="10sp"
+            android:background="@color/white"
+            android:text="Thêm danh mục"
+            android:textSize="18sp"
+            android:textColor="@color/holo_red_dark" />
+    </RelativeLayout>
+
+</RelativeLayout>

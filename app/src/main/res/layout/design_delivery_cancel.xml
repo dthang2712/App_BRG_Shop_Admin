@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/bg_gach_duoi">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TextView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên khách hàng: Nguyễn Lê Thu Trang"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TextView_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số Điện thoại: 034567896"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_name"/>
+        <TextView
+            android:id="@+id/TextView_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: 33 ngõ 9, Phố An Hòa, Phường Mộ Lao, Quận Hà Đông"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_phone"/>
+        <TextView
+            android:id="@+id/TextView_gioxacnhan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giờ xác nhận đơn: 20:00"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_address"/>
+        <TextView
+            android:id="@+id/TextView_giogiaodukien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giờ giao dự kiến: 21:00"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_gioxacnhan1"/>
+        <TextView
+            android:id="@+id/TextView_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người giao hàng:"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_giogiaodukien1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TextView_nameship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoàng Đức Thắng"
+            android:textSize="16dp"
+            android:textColor="@color/appRed"
+            android:layout_toRightOf="@+id/TextView_name1"
+            android:layout_below="@+id/TextView_giogiaodukien1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TextView_statuscancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái:"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_name1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TextView_statuscancel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giao hàng không thành công"
+            android:textSize="16dp"
+            android:textColor="@color/appRed"
+            android:layout_toRightOf="@+id/TextView_statuscancel"
+            android:layout_below="@+id/TextView_name1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TextView_whycancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lý do:"
+            android:textSize="16dp"
+            android:textColor="@color/colorDark"
+            android:layout_below="@+id/TextView_statuscancel"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TextView_whycancel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng từ chối nhận hàng"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/TextView_whycancel"
+            android:textColor="@color/appRed"
+            android:layout_below="@+id/TextView_statuscancel"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

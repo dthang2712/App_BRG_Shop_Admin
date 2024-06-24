@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryDeliveringDetailActivity">
+    <RelativeLayout
+        android:id="@+id/RLT_header"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/DarkBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125sp"
+            android:layout_marginTop="6sp"
+            android:text="Chi tiết đơn hàng"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/img_back_info"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:padding="10sp"
+            android:src="@drawable/icon_back" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLT_header">
+        <RelativeLayout
+            android:id="@+id/RLT_donhang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteTwo">
+            <TextView
+                android:id="@+id/TextView_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên khách hàng: Nguyễn Lê Thu Trang"
+                android:textSize="16dp"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TextView_sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Điện thoại: 034567896"
+                android:textSize="16dp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@+id/TextView_ten"/>
+            <TextView
+                android:id="@+id/TextView_diachi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: 33 ngõ 9, Phố An Hòa, Phường Mộ Lao, Quận Hà Đông"
+                android:textSize="16dp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@+id/TextView_sdt"/>
+            <TextView
+                android:id="@+id/TextView_giogiaodukien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giờ giao dự kiến: 21:00"
+                android:textSize="16dp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@+id/TextView_diachi"/>
+            <TextView
+                android:id="@+id/TextView_tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái:"
+                android:textSize="16dp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@+id/TextView_giogiaodukien"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TextView_trangthai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="đang giao hàng"
+                android:textSize="16dp"
+                android:textColor="@color/appRed"
+                android:layout_below="@+id/TextView_giogiaodukien"
+                android:layout_toRightOf="@+id/TextView_tt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TextView_nameship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người giao hàng: "
+                android:textSize="16dp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@+id/TextView_tt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TextView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoàng Đức Thắng"
+                android:textSize="16dp"
+                android:textColor="@color/appRed"
+                android:layout_below="@+id/TextView_tt"
+                android:layout_toRightOf="@+id/TextView_nameship"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TextView_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng chi tiết: "
+                android:textSize="18dp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@+id/TextView_nameship"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView_product"
+                android:layout_marginTop="3dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/design_delivery_list_product"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
